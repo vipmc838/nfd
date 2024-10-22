@@ -100,7 +100,7 @@ async function onMessage (message) {
     let startMsg = await fetch(startMsgUrl).then(r => r.text())
     return sendMessage({
       chat_id:message.chat.id,
-      text:startMsg,
+      /*text:startMsg, */
     })
   }
   if(message.chat.id.toString() === ADMIN_UID){
